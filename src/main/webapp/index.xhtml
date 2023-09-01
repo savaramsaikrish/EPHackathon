@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+<head>
+  <title>EP Project</title>
+  <link type="text/css" rel="stylesheet" href="style.css"/>
+  <style>
+    /* Reset the default margin and padding */
+    body, ul {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .left-content {
+      flex: 1;
+      max-width: 50%;
+    }
+
+    .right-content {
+      flex: 1;
+      text-align: right;
+      max-width: 50%;
+      box-sizing: border-box;
+      padding: 0 20px; /* Add some padding to keep space between the image and the right edge */
+    }
+
+    .imageColumn img {
+      max-width: 450%;
+      height: auto;
+    }
+
+    @media (max-width: 767px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .right-content {
+        max-width: 100%;
+      }
+    }
+    
+
+    /* Style the navbar */
+    .navbar {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    /* Change color on hover */
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .left-content {
+      flex: 1;
+    }
+
+    .right-content {
+      flex: 1;
+      text-align: right;
+    }
+  </style>
+</head>
+
+<body>
+<h2 align="center">Tribal Handicraft Shopee</h2>
+  <div class="navbar">
+    <a href="index.jsf">Home</a>
+    <a href="employeelogin.jsp">User Login</a>
+    <a href="employeereg.jsp">User Registration</a>
+    <a href="products.xhtml">View Products</a>
+    <a href="feedback.jsp">Feedback</a>
+    <a href="adminlogin.jsp">Admin Login</a>
+    <a href="contactus.jsp">Contact</a>
+    <a href="chatbot.jsp">Guidance</a>
+  </div>
+
+  <img class="logo" src="images/erp.png" alt="Logo Here"/>
+  
+  <hr color="black"/>
+  <hr color="black"/>
+  <br/>
+
+  <div class="container">
+    <div class="left-content">
+      <p>
+       <b> Tribal Handicraft Shopee is a unique platform that aims to promote and support the traditional artistry and craftsmanship of various tribal communities around the world. Our mission is to preserve and celebrate the rich cultural heritage of these tribes by showcasing their exquisite handicrafts and traditional products to a global audience.</b>
+        <br/><br/>
+       <b> Each product available on Tribal Handicraft Shopee is carefully handcrafted by skilled artisans using age-old techniques that have been passed down through generations. By purchasing from us, you are not only acquiring a beautiful and authentic piece of art but also contributing to the sustainable livelihoods of these talented tribal artisans.</b>
+        <br/><br/>
+       <b> We believe that the beauty of tribal handicrafts lies in their uniqueness and the stories they carry. Every item you find on our platform has a tale to tell - a reflection of the community's history, beliefs, and way of life. Through Tribal Handicraft Shopee, we invite you to be a part of this journey, connecting with cultures and traditions that have stood the test of time.</b>
+        <br/><br/>
+       <b> Join us in our endeavor to create a world where the artistic brilliance of tribal communities is appreciated, cherished, and preserved for generations to come. Explore our collection of tribal handicrafts and let their charm add a touch of culture and elegance to your life.</b>
+      </p>
+    </div>
+    
+    <div class="right-content">
+      <div class="imageColumn">
+        <img src="images/erpmain.png"/>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

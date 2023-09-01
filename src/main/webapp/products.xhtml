@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+<head>
+  <title>EP Project</title>
+  <link type="text/css" rel="stylesheet" href="style.css"/>
+  <link type="text/css" rel="stylesheet" href="product.css"/>93
+  
+  
+  <style>
+    /* Reset the default margin and padding */
+    body, ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Style the navbar */
+    .navbar {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    /* Change color on hover */
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .left-content {
+      flex: 1;
+    }
+
+    .right-content {
+      flex: 1;
+      text-align: right;
+    }
+  </style>
+</head>
+
+<body>
+<h2 align="center">Tribal Handicraft Shopee</h2>
+  <div class="navbar">
+    <a href="index.jsf">Home</a>
+    <a href="employeelogin.jsp">User Login</a>
+    <a href="employeereg.jsp">User Registration</a>
+    <a href="products.xhtml">View Products</a>
+    <a href="feedback.jsp">Feedback</a>
+    <a href="adminlogin.jsp">Admin Login</a>
+    <a href="contactus.jsp">Contact</a>
+  </div>
+
+  <img class="logo" src="images/erp.png" alt="Logo Here"/>
+  
+  <hr color="black"/>
+  <hr color="black"/>
+  <br/>
+  <div align="center">
+   <h2>Our Products</h2>
+  </div>
+  <div class="product-container">
+    
+    <div class="product-block">
+        <img src="images/image1.jpg" alt="Product 1" onclick="showEnlarged(this, 'Product 1', 'Description of Product 3', '₹699')"/>
+        <h3 class="product-name"> Blossom, Bamboo Handmade Hand fan</h3>
+        <p class="price-tag">₹699</p>
+        <p class="product-description">Bamboo Made handicraft fan With Handle Round shape Vat savitri pooja Special Hand fan</p>
+        <button class="add-to-cart-button" onclick="showAlert()">Add to Cart</button>
+    </div>
+    <div class="product-block">
+        <img src="images/image2.jpg" alt="Product 3" onclick="showEnlarged(this, 'Product 3', 'Description of Product 3', '₹699')"/>
+        <h3 class="product-name">Red Bamboo Tribal Jewellery Set</h3>
+        <p class="price-tag">₹799</p>
+        <p class="product-description">The Handmade Maroon Red Bamboo Tribal Jewellery Set was built with people like you in mind. Something to keep you happy. Every. Single. Day.</p>
+        <button class="add-to-cart-button" onclick="showAlert()">Add to Cart</button>
+    </div>
+    <div class="product-block">
+        <img src="images/image3.jpeg" alt="Product 3" onclick="showEnlarged(this, 'Product 3', 'Description of Product 3', '₹699')"/>
+        <h3 class="product-name">Idol of Tribal culture</h3>
+        <p class="price-tag">₹899</p>
+        <p class="product-description">Bamboo Handmade Hand fan idol</p>
+        <button class="add-to-cart-button" onclick="showAlert()">Add to Cart</button>
+    </div>
+    <div class="product-block">
+        <img src="images/image4.jpg" alt="Product 4" onclick="showEnlarged(this, 'Product 4', 'Description of Product 4', '₹699')"/>
+        <h3 class="product-name">Tribal art warli painting</h3>
+        <p class="price-tag">₹999</p>
+        <p class="product-description">Tribal art warli painting maharashtra Immagini Stock</p>
+        <button class="add-to-cart-button" onclick="showAlert()">Add to Cart</button>
+    </div>
+    <div class="product-block">
+        <img src="images/image5.jpeg" alt="Product 3" onclick="showEnlarged(this, 'Product 3', 'Description of Product 3', '₹699')"/>
+        <h3 class="product-name">Straw Baskets</h3>
+        <p class="price-tag">₹199</p>
+        <p class="product-description"> vintage with patina, approx. 30 to 45 cm diameter</p>
+        <button class="add-to-cart-button" onclick="showAlert()">Add to Cart</button>
+    </div>
+    <div class="product-block">
+        <img src="images/image6.jpg" alt="Product 3" onclick="showEnlarged(this, 'Product 3', 'Description of Product 3', '₹699')"/>
+        <h3 class="product-name">6" Tribal Group Dance In Brass </h3>
+        <p class="price-tag">₹699</p>
+        <p class="product-description">6" Tribal Group Dance In Brass | Handmade | Made In India
+
+
+ITEM CODE: ZBZ89
+SPECIFICATIONS: BRASS STATUE
+HEIGHT: 4.8 INCH
+WIDTH: 6 INCH
+DEPTH: 2.2 INCH
+WEIGHT: 540 GM</p>
+        <button class="add-to-cart-button" onclick="showAlert()">Add to Cart</button>
+    </div>
+    <div class="product-block">
+        <img src="images/image7.jpg" alt="Product 3" onclick="showEnlarged(this, 'Product 3', 'Description of Product 3', '₹699')"/>
+        <h3 class="product-name">Product 3</h3>
+        <p class="price-tag">₹299</p>
+        <p class="product-description">Description of Product 3</p>
+        <button class="add-to-cart-button" onclick="showAlert()">Add to Cart</button>
+    </div>
+    <div class="product-block">
+        <img src="images/image8.jpg" alt="Product 3" onclick="showEnlarged(this, 'Product 3', 'Description of Product 3', '₹699')"/>
+        <h3 class="product-name">Arteastic Dhokra Brass Tribal Couple</h3>
+        <p class="price-tag">₹399</p>
+        <p class="product-description">Arteastic Dhokra Brass Tribal Couple</p>
+        <button class="add-to-cart-button" onclick="showAlert()">Add to Cart</button>
+    </div>
+    <div class="product-block">
+        <img src="images/image9.jpg" alt="Product 3" onclick="showEnlarged(this, 'Product 3', 'Description of Product 3', '₹699')"/>
+        <h3 class="product-name">Embroidered Sling Bag</h3>
+        <p class="price-tag">₹499</p>
+        <p class="product-description">Bag tribal style</p>
+        <button class="add-to-cart-button" onclick="showAlert()">Add to Cart</button>
+    </div>
+    <div class="product-block">
+        <img src="images/image10.jpg" alt="Product 3" onclick="showEnlarged(this, 'Product 3', 'Description of Product 3', '₹699')"/>
+        <h3 class="product-name">Arteastic Dhokra Brass Tribal Couple</h3>
+        <p class="price-tag">₹599</p>
+        <p class="product-description">Arteastic Dhokra Brass Tribal Couple</p>
+        <button class="add-to-cart-button" onclick="showAlert()">Add to Cart</button>
+    </div>
+    <div class="product-block">
+        <img src="images/image11.jpg" alt="Product 3" onclick="showEnlarged(this, 'Product 3', 'Description of Product 3', '₹699')"/>
+        <h3 class="product-name">PTribal Group Dance In Brass </h3>
+        <p class="price-tag">₹699</p>
+        <p class="product-description">Tribal Group Dance In Brass  </p>
+        <button class="add-to-cart-button" onclick="showAlert()">Add to Cart</button>
+    </div>
+    <div class="product-block">
+        <img src="images/image12.jpg" alt="Product 3" onclick="showEnlarged(this, 'Product 3', 'Description of Product 3', '₹699')"/>
+        <h3 class="product-name">PTribal Group Dance </h3>
+        <p class="price-tag">₹799</p>
+        <p class="product-description">PTribal Group Dance </p>
+        <button class="add-to-cart-button" onclick="showAlert()">Add to Cart</button>
+    </div>
+    <div class="product-block">
+        <img src="images/image13.jpg" alt="Product 3" onclick="showEnlarged(this, 'Product 3', 'Description of Product 3', '₹699')"/>
+        <h3 class="product-name">Tribal Group </h3>
+        <p class="price-tag">₹899</p>
+        <p class="product-description">Tribal Group Dance In Brass </p>
+        <button class="add-to-cart-button" onclick="showAlert()">Add to Cart</button>
+    </div>
+    
+</div>
+<div class="enlarged-image-container" onclick="hideEnlarged()">
+    <img class="enlarged-image" src="" alt=""/>
+    <div class="enlarged-image-description"></div>
+</div>
+
+<div class="back-button" onclick="hideEnlarged()">Back</div>
+
+<script>
+    function showEnlarged(image, name, description, price) {
+        var enlargedImageContainer = document.querySelector('.enlarged-image-container');
+        var enlargedImage = enlargedImageContainer.querySelector('.enlarged-image');
+        var enlargedImageDescription = enlargedImageContainer.querySelector('.enlarged-image-description');
+        var backBtn = document.querySelector('.back-button');
+
+        enlargedImage.src = image.src;
+        enlargedImage.alt = image.alt;
+        enlargedImageDescription.innerHTML = name + ' - ' + description + '<br/>' + '<span class="price-tag">' + price + '</span>';
+
+        enlargedImageContainer.style.display = 'flex';
+        backBtn.style.display = 'block';
+    }
+    function showAlert() {
+    var myText = "Added successfully..🙂";
+    alert (myText);
+    }
+    function hideEnlarged() {
+        var enlargedImageContainer = document.querySelector('.enlarged-image-container');
+        var backBtn = document.querySelector('.back-button');
+
+        enlargedImageContainer.style.display = 'none';
+        backBtn.style.display = 'none';
+    }
+</script>
+
+</body>
+</html>
